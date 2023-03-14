@@ -27,7 +27,22 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="kaltura_player_174693600" style="width: 560px;height: 395px"></div>
+                    <script type="text/javascript" src="https://cdnapisec.kaltura.com/p/2267831/embedPlaykitJs/uiconf_id/45943321"></script>
+                    <script type="text/javascript">
+                    try {
+                      var kalturaPlayer = KalturaPlayer.setup({
+                        targetId: "kaltura_player_174693600",
+                        provider: {
+                          partnerId: 2267831,
+                          uiConfId: 45943321
+                        }
+                      });
+                      kalturaPlayer.loadMedia({entryId: '1_x6idlo0x'});
+                    } catch (e) {
+                      console.error(e.message)
+                    }
+                  </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
